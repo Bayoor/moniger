@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-
+  
   --Blue: hsla(218, 51%, 27%, 1);
   --Light-Blue: hsla(218, 27%, 42%, 1);
   --Dark-Blue: hsla(243, 17%, 22%, 1);
@@ -13,11 +13,13 @@
   --White: hsla(0, 0%, 100%, 1);
 }
 
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -34,7 +36,7 @@ a {
 body {
   font-family: DM Sans;
   font-size: 1.6rem;
-  overflow-x: hidden;
+  
 }
 
 header {
