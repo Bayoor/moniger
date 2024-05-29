@@ -360,6 +360,11 @@ header {
   margin-bottom: 4.8rem;
 }
 
+.investment-opportunities p > span {
+  
+  display: block;
+}
+
 .investment-opportunities button {
   display: flex;
   justify-content: center;
