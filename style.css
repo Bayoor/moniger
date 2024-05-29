@@ -220,11 +220,11 @@ header {
 .product-offers div {
   display: grid;
   grid-template-columns: repeat(6, minmax(auto, 1fr));
-  /* overflow-x: auto; */
+  overflow-x: auto;
 }
 
 .scrollbody {
-  width: 100%;
+ 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
