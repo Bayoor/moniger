@@ -255,7 +255,8 @@ header {
 
   scrollbar-width: none;
   -ms-overflow-style: none;
-  /* cursor: pointer; */
+  cursor: pointer;
+
 }
 
 .scrollbody::-webkit-scrollbar {
@@ -390,6 +391,7 @@ header {
   line-height: 2.2rem;
   text-align: center;
 
+
   color: var(--Dark-Blue);
   margin-bottom: 1.6rem;
 }
@@ -464,9 +466,13 @@ header {
   font-weight: bold;
   line-height: 2.344rem;
   margin-block: 1.6rem;
+  text-align: center;
 }
 
 .investment_change p {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   width: 28ch;
   font-weight: 500;
   line-height: 2rem;
