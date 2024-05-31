@@ -189,12 +189,25 @@ header {
   align-items: center;
 }
 
+.flex h2 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.balance {
+  width: 111px;
+}
+
+
+
 .wrap {
   width: 80px;
+  
 }
 
 .wrap p {
   width: 4ch;
+ 
 }
 
 .why-choose-moniger button {
