@@ -126,13 +126,19 @@ header {
 }
 
 .heading div {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 2.4rem;
 }
 
 .heading img {
-  width: 100%;
+  /*  */
+  display: flex;
+  justify-content: center;
+  width: 295px;
   height: 41.1rem;
+  border-radius: 30px;
+ 
+  margin: 0 auto;
 }
 
 .why-choose-moniger div {
@@ -198,16 +204,12 @@ header {
   width: 111px;
 }
 
-
-
 .wrap {
   width: 80px;
-  
 }
 
 .wrap p {
   width: 4ch;
- 
 }
 
 .why-choose-moniger button {
@@ -226,6 +228,7 @@ header {
 .product-offers {
   margin-top: 4.8rem;
   background: #fef3eb;
+  height: 450px;
   position: relative;
 }
 
@@ -248,6 +251,8 @@ header {
   overflow-x: auto;
   gap: 1rem;
 
+  margin-top: 4rem;
+
   scrollbar-width: none;
   -ms-overflow-style: none;
   /* cursor: pointer; */
@@ -267,7 +272,7 @@ header {
   display: none;
   background: #fff;
   border-radius: 20px;
-  height: 350px;
+  height: auto;
   padding: 2rem;
   position: relative;
   top: -30rem;
@@ -276,11 +281,8 @@ header {
 }
 
 .display:hover + .display.hidden-content,
-.display:focus + .display.hidden-content,
-.display:active + .display.hidden-content {
+.display:focus + .display.hidden-content {
   display: block;
-
-  transition: 1s;
 }
 
 .hidden-content img {
