@@ -34,10 +34,9 @@ a {
 
 button {
   font-family: "DM Sans";
-
 }
 button:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 body {
@@ -263,13 +262,13 @@ header {
   /* margin-left: 3rem; */
 }
 
-.display:hover + .display.hidden-content {
+.display:hover + .display.hidden-content,
+.display:focus + .display.hidden-content,
+.display:active + .display.hidden-content {
   display: block;
 
   transition: 1s;
 }
-
-
 
 .hidden-content img {
   width: 56px;
