@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  
+
   --Blue: hsla(218, 51%, 27%, 1);
   --Light-Blue: hsla(218, 27%, 42%, 1);
   --Dark-Blue: hsla(243, 17%, 22%, 1);
@@ -12,7 +12,6 @@
   --Moniger-Orange: hsla(25, 91%, 58%, 1);
   --White: hsla(0, 0%, 100%, 1);
 }
-
 
 *,
 *::before,
@@ -36,7 +35,6 @@ a {
 body {
   font-family: DM Sans;
   font-size: 1.6rem;
-  
 }
 
 header {
@@ -44,9 +42,8 @@ header {
   justify-content: center;
   align-items: center;
   background: white;
-  box-shadow: 0 10px 5px 0  var(--Light-Grey);
+  box-shadow: 0 10px 5px 0 var(--Light-Grey);
   height: 6rem;
- 
 }
 
 .nav-logo {
@@ -67,7 +64,7 @@ header {
 .heading {
   background: url(./assets/images/heading_bgImage.png) no-repeat;
   background-size: auto;
-  background-position:  172px 25px;
+  background-position: 172px 25px;
 }
 
 .heading h1 {
@@ -209,6 +206,7 @@ header {
 .product-offers {
   margin-top: 4.8rem;
   background: #fef3eb;
+  position: relative;
 }
 
 .product-offers h2 {
@@ -220,14 +218,16 @@ header {
   color: var(--Dark-Blue);
 }
 
-.product-offers div {
+/* .product-offers div {
+  
+} */
+
+.scrollbody {
   display: grid;
   grid-template-columns: repeat(6, minmax(auto, 1fr));
   overflow-x: auto;
-}
+  gap: 1rem;
 
-.scrollbody {
- 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -236,8 +236,44 @@ header {
   display: none;
 }
 
-.scrollbody img {
+.scrollbody img,
+.hidden-content,
+.hidden-content img {
   width: 295px;
+}
+
+.hidden-content {
+  display: none;
+  background: #fff;
+  border-radius: 20px;
+  height: 350px;
+  padding: 2rem;
+  position: relative;
+  top: -30rem;
+  /* margin-left: 3rem; */
+}
+
+.display:hover + .display.hidden-content {
+  display: block;
+}
+
+
+
+.hidden-content img {
+  width: 56px;
+  height: 56px;
+}
+
+.hidden-content h3 {
+  font-size: 1.8rem;
+  margin-block: 1.2rem;
+  color: #4f4f4f;
+}
+
+.hidden-content p {
+  font-size: 1.2rem;
+  line-height: 2.04rem;
+  color: #828282;
 }
 
 .features {
@@ -362,10 +398,8 @@ header {
 }
 
 .investment-opportunities p > span {
-  
   display: block;
   width: 100%;
-  border: 1px red solid;
 }
 
 .investment-opportunities button {
@@ -444,7 +478,6 @@ header {
 .footer {
   background: url(./assets/images/footer_bgImage.png) no-repeat;
   background-size: cover;
-  
 }
 
 .footer > div:nth-child(1) {
@@ -508,8 +541,8 @@ header {
 .footer > div:nth-child(2) > div > div > p {
   font-size: 1.2rem;
   color: var(--Dark-Slate);
- text-align: center;
- margin-bottom: .5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .footer > div:nth-child(2) > div > div > p:nth-child(2) {
